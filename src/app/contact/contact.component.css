@@ -1,0 +1,241 @@
+.ContactContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nexocode{
+    width: 50%;
+    height: 40%;
+    display: flex;
+    gap: 70px;
+  
+}
+
+.nexocodeinfo h2{
+       margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 2rem;
+    font-weight:normal;
+    margin-top: 30px;
+}
+
+.nexocodeinfo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nexocodeinfo p{
+    line-height: 30px;
+}
+
+.contactinfo{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    clip-path: polygon( 120px 0%, calc(100% - 120px) 0%,100% 120px,100% 100%,0% 100%,0% 120px);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.contactinfocontainer{
+     position: relative;
+    width: 100%;
+    height: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.corner-top-right {
+    position: absolute;
+    top: 0;
+    border-top-right-radius: 20px;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    background-color: #E6AF2E;
+    clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+    z-index: 10;
+}
+
+.contactinfocontainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    border-top-left-radius: 20px;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    background-color: #E6AF2E;
+    clip-path: polygon(0 0, 100% 0, 0% 100%);
+    z-index: 1;
+}
+.contactnumber{
+    display: flex;
+    width: 20%;
+    height: 70%;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    .p1{
+        font-size: 1.2rem;
+    }
+    
+}
+
+.redessociales{
+    width: 20%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 20px;
+}
+
+.redessociales p{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.redessociales p:hover{
+    background-color: #E6AF2E;
+    color: white;
+
+}
+.linkcontainer{
+    width: 20%;
+    height: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkcontainer p{
+    font-size: 1.2rem;
+    
+}
+
+.linkcontainer button{
+    width: 100%;
+    height: 40px;
+    border:#E6AF2E solid 2px;
+    margin: 0;
+    background-color: #E6AF2E;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.linkcontainer a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.linkcontainer button:hover{
+    background-color: white;
+}
+
+@media screen and (min-width: 1900px) and (max-width: 1920px) {
+  .ContactContainer {
+    padding-top: 100px;
+    justify-content: space-around;
+  }
+
+  .nexocode {
+    width: 60%;
+    gap: 90px;
+  }
+
+  .nexocodeinfo h2 {
+    font-size: 2.4rem;
+    margin-top: 20px;
+  }
+
+  .nexocodeinfo p {
+    font-size: 1.3rem;
+    line-height: 32px;
+  }
+
+  .contactinfo {
+    clip-path: polygon(
+      140px 0%,
+      calc(100% - 140px) 0%,
+      100% 140px,
+      100% 100%,
+      0% 100%,
+      0% 140px
+    );
+    gap: 70px;
+    padding-top: 50px;
+  }
+
+  .contactinfocontainer {
+    height: 32%;
+    gap: 70px;
+  }
+
+  .corner-top-right,
+  .contactinfocontainer::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contactnumber {
+    width:16%;
+  }
+
+  .contactnumber .p1 {
+    font-size: 1.6rem;
+  }
+  .contactnumber p{
+    display: flex;
+    align-items: center;
+  }
+  .contactnumber i{
+    font-size: 1.8rem;
+  }
+
+  .redessociales {
+    width: 22%;
+    font-size: 2.4rem;
+    gap: 30px;
+  }
+
+  .redessociales p {
+    width: 60px;
+    height: 60px;
+  }
+
+  .linkcontainer {
+    width: 22%;
+  }
+
+  .linkcontainer p {
+    font-size: 1.6rem;
+  }
+
+  .linkcontainer button {
+    height: 48px;
+    font-size: 1.2rem;
+  }
+}
