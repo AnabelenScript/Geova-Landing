@@ -1,0 +1,178 @@
+.galerycontainer{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.factscontainer{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.facts{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 65%;
+}
+
+.fact1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.factslist{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.factslist i{
+    color: #E6AF2E;
+    font-size: 2rem;
+}
+
+.factslist p{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.division{
+    width: 60%;
+    height: 0.5%;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.galerytitle{
+      margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight:normal;
+    margin-top: 30px;
+}
+
+.galery {
+  width: 100%;
+  height: 350px;
+  display: flex;
+
+}
+
+.thumb {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex 0.4s ease;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.5);
+  filter: brightness(40%);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+  transition: opacity 0.4s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.thumb:hover {
+  flex: 2;
+}
+
+.thumb:hover img {
+  transform: scale(1);
+  filter: brightness(100%);
+}
+
+.thumb:hover .caption {
+  opacity: 0;
+}
+
+@media screen and (min-width: 1900px) and (max-width: 1920px) {
+  .galerycontainer {
+    padding-top: 60px;
+    gap: 40px;
+  }
+
+  .factscontainer {
+    gap: 100px;
+  }
+
+  .facts {
+    width: 70%;
+    gap: 50px;
+  }
+
+  .fact1 {
+    font-size: 1.5rem;
+  }
+
+  .factslist {
+    font-size: 1.3rem;
+    gap: 24px;
+  }
+
+  .factslist i {
+    font-size: 2.3rem;
+  }
+
+  .factslist p {
+    gap: 24px;
+    padding-left: 30px;
+  }
+
+  .division {
+    width: 70%;
+    height: 1%;
+  }
+
+  .galerytitle {
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+
+  .galery {
+    height: 480px;
+  }
+
+  .thumb img {
+    transform: scale(1.4);
+    filter: brightness(45%);
+  }
+
+  .caption {
+    font-size: 1.1rem;
+  }
+
+  .thumb:hover img {
+    transform: scale(1.05);
+  }
+}
